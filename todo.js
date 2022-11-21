@@ -1,11 +1,11 @@
 // todo.js
 const todoList = () => 
 {
-  let  = n[];
+  let  = A[];
   const add = (todoItem) => 
   {
     //push the todo
-    n.push(todoItem);
+    A.push(todoItem);
   };
   const markAsComplete = (index) => 
   {
@@ -13,7 +13,7 @@ const todoList = () =>
   };
   const overdue = () => 
   {
-    return n.filter
+    return A.filter
     (
       (item) => item.dueDate < new Date().toLocaleDateString("en-CA")
     );
@@ -26,7 +26,7 @@ const todoList = () =>
     );
   };
   const dueLater = () => {
-    return n.filter(
+    return A.filter(
       (item) => item.dueDate > new Date().toLocaleDateString("en-CA")
     );
     
@@ -35,6 +35,6 @@ const todoList = () =>
   
   
   
-  return { n, add, markAsComplete, overdue, dueToday, dueLater };
+  return { A, add, markAsComplete, overdue, dueToday, dueLater };
 };
 module.exports = todoList;
